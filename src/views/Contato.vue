@@ -1,9 +1,14 @@
 <template>
   <div>
+    <div v-if="loading">
+      <PageLoading />
+    </div>
+    <transition>
       <div v-if="api">
-    <h1>Contato</h1>
+        <h1>Contato</h1>
         <p>{{ api }}</p>
       </div>
+    </transition>
   </div>
 </template>
 

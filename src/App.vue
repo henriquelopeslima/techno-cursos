@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TheHeader/>
-    <router-view/>
+    <router-view class="container"/>
   </div>
 </template>
 
@@ -36,5 +36,20 @@ a {
 
 a.router-link-active {
   color: #4b8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.v-enter {
+  opacity: 0;
+  transform: translate3d(-20px, 0, 0);
+}
+
+.v-enter-active {
+  transition: all .3s;
 }
 </style>
