@@ -8,9 +8,9 @@
         <div>
           <h1>Sobre a {{ api.titulo }}</h1>
           <p>{{ api.descricao }}</p>
-          <router-link class="btn-cursos" tag="button" to="/cursos"
-            >Cursos</router-link
-          >
+          <router-link class="btn-cursos" tag="button" to="/cursos">
+            Cursos
+          </router-link>
           <div>
             <h2>Avaliações</h2>
             <ul>
